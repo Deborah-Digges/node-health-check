@@ -1,5 +1,25 @@
 {
-  "name": "socialapp",
+  "name": "Health Check",
+  "version": "1.0.0",
+  "description": "An application to monitor the status of http endpoints",
+  "author": "Deborah Digges <deborah.gertrude.digges@gmail.com>",
+
+  "scripts": {
+    "start": "node server.js",
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Deborah-Digges/node-health-check"
+},
+  "bugs": {
+  "url": "https://github.com/Deborah-Digges/node-health-check/issues"
+},
+  "keywords": [
+  "node",
+  "health-check",
+  "socket",
+  "angular"
+],
   "dependencies": {
     "async": "^1.4.2",
     "body-parser": "^1.13.3",
@@ -7,5 +27,10 @@
     "mongoose": "^4.1.6",
     "request": "^2.61.0",
     "socket.io": "^1.3.6"
-  }
+  },
+  "publishConfig": {
+  "registry": "https://your-private-hosted-npm.registry.nodejitsu.com"
+},
+  "license": "MIT"
 }
+
