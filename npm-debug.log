@@ -4,12 +4,11 @@
 3 info using node@v0.12.0
 4 verbose node symlink /usr/local/bin/node
 5 verbose publish [ '.' ]
-6 verbose stack Error: No version provided
-6 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:44:36
-6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:51:40
-6 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:17)
-6 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
+6 verbose stack Error: Failed to parse json
+6 verbose stack Unexpected token }
+6 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:378:25)
+6 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:85:51)
+6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:59:33
 6 verbose stack     at evalmachine.<anonymous>:336:14
 6 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
 6 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:99:15)
@@ -18,7 +17,14 @@
 9 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
 10 error node v0.12.0
 11 error npm  v2.5.1
-12 error No version provided
-13 error If you need help, you may report this error at:
-13 error     <http://github.com/npm/npm/issues>
-14 verbose exit [ 1, true ]
+12 error file /Users/ddigges/git/whatsup/app/package.json
+13 error code EJSONPARSE
+14 error Failed to parse json
+14 error Unexpected token }
+15 error File: /Users/ddigges/git/whatsup/app/package.json
+16 error Failed to parse package.json data.
+16 error package.json must be actual JSON, not just JavaScript.
+16 error
+16 error This is not a bug in npm.
+16 error Tell the package author to fix their package.json file. JSON.parse
+17 verbose exit [ 1, true ]
