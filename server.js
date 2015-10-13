@@ -15,6 +15,6 @@ io.on('connection', function(socket){
     setInterval(function(){ statusController.postDetailsToClient(socket) }, pushInterval);
 });
 
-http.listen(app.get('port'), function () {
+http.listen(app.get('port'), '0.0.0.0',  function () {
       console.log('Server listening on', app.get('port'));
 });
