@@ -8,6 +8,14 @@ A small application to check the status of a set of endpoints.
 3. `node server.js`
 4. Go to: hostname:3000
 
+# Using docker/compose
+
+1. `cp .env.sample .env`
+2. `docker-compose build`
+3. `docker-compose run web npm install`
+4. `docker-compose up -d web`
+
+
 ## Usage
 ![Demo](demo.gif)
 

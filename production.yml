@@ -1,0 +1,13 @@
+mongodb:
+  image: mongo
+web:
+  build: .
+  restart: always
+  command: forever ./bin/www
+  volumes:
+    - .:/nhc
+  env_file: .env
+  ports:
+    - "3000:3000"
+  links:
+    - mongodb
