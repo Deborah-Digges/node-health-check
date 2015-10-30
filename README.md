@@ -11,9 +11,7 @@ A small application to check the status of a set of endpoints.
 # Using docker/compose
 
 1. `cp .env.sample .env`
-2. `docker-compose build`
-3. `docker-compose run web npm install`
-4. `docker-compose up -d web`
+2. `docker-compose up -d web`
 
 
 ## Usage
