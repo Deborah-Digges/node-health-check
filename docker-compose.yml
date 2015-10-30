@@ -2,7 +2,7 @@ mongodb:
   image: mongo
 web:
   build: .
-  command: nodemon --verbose ./bin/www
+  command: nodemon --verbose server.js
   volumes:
     - .:/nhc
   env_file: .env
