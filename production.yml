@@ -3,9 +3,7 @@ mongodb:
 web:
   build: .
   restart: always
-  command: forever ./bin/www
-  volumes:
-    - .:/nhc
+  command: npm start
   env_file: .env
   ports:
     - "3000:3000"
